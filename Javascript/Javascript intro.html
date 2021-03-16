@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1 {text-align: center;}
+
+        h2 {text-align: center;}
+
+        h3 {text-align: center;}
+
+        p {text-align: center;}
+
+        button {text-align: center;}
+
+    </style>
+
+    <body>
+        <h1>Javascript intro</h1>
+        <br>
+        <p>Javascript brukes til å legge til funskjoner i koden din.</p>
+        <br>
+        <h2>Onclick</h2>
+        <br>
+        <p>Onclick funksjonen brukes når man vil at noe skal skje når du trykker på et bestemt sted på siden.</p>
+        <br>
+        <p><button id="eks" onclick="eksempel()">trykk her</button></p>
+        <br>
+        <p>I eksempelet over har jeg endret InnerHTML til å si BRA!, når man trykker på knappen.</p>
+        <br>
+        <p>Slik ser kommandoen ut for det: function eksempel() {document.getElementById('eks').innerHTML = 'bra!';}</p>
+        <br>
+        <p>Du kan velge at fler ting skal skje i funsjonen du har laget hvis man trenger det.</p>
+        <br>
+        <h2>Onload</h2>
+        <br>
+        <p>Onload sier til nettleseren at funksjonen du har i script skal begynne å kjøre når hele siden har loadet.</p>
+        <br>
+        <h2>Oninput og Onchange</h2>
+        <br>
+        <p>Oninput slår til hver gang man trykker inn en bokstav i et element. Onchange slår til når vi går bort fra elementet. (når vi indirekte sier vi er ferdige med endringen) </p>
+        <br>
+        <p>For å endre det som står i innerHTML bruker vi =. For å legge till noe i inner HTML bruker vi +=</p>
+        <br>
+        <p><input type="text" oninput="testoninput()" onchange="testonchange()" onmouseover="testonmouseover()" onmouseout="testonmouseout()"></p>
+
+        <h2 id="info"></h3>
+
+        <br>
+        <p>Hvs man vil at loggen skal dukke opp i console log bruker man EKS: function minfunskjon() {console.log('ondbclick')}</p>
+        <br>
+        <p><a href="console log.html">Link til console log kode</a></p>
+
+
+
+        <script>
+            function eksempel() {
+            document.getElementById('eks').innerHTML = 'BRA!';
+            }
+
+            function testonload() {
+                document.getElementById('info').innerHTML += '<li>onload</li>';
+            }
+
+            function testoninput() {
+                document.getElementById('info').innerHTML += '<li>oninput</li>';
+            }
+
+            function testonchange() {
+                document.getElementById('info').innerHTML += '<li>Onchange</li>';
+            }
+
+            function testonmouseover() {
+                document.getElementById('info').innerHTML += '<li>onmouseover</li>';
+            }
+
+            function testonmouseout() {
+                document.getElementById('info').innerHTML += '<li>onmouseout</li>';
+            }
+
+
+
+        </script>
+    </body>
+</html>

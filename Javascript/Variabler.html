@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <title>Variabler</title>
+    <style>
+        h1 {text-align: center;}
+
+        h2 {text-align: center;}
+
+        h3  {text-align: center;}
+
+        p {text-align: center;}
+
+        div {text-align: center;}
+
+    </style>
+    <body>
+        <h1>Variabler</h1>
+        <br>
+        <p>Variebler kan brukes utenfor og inennfor en funksjon.</p>
+        <br>
+        <p>Når vi deklarerer Var utenfor en funksjon er det en Global variabel. De lever så lenge siden går.</p>
+        <br>
+        <p>Local variabler er de som lever innad i en funksjon. De vil da bare slå til når du bruker funksjonen.</p>
+        <br>
+        <p>Får å øke tallene i variablene, mkan man bruke syntax ++. Den øker verdien i TallA og B med 1.</p>
+        <br>
+        <p><button onclick="tell()">Tell!</button></p>
+        <div id="info">trykk på knappen</div>
+        <br>
+        <p>Tall og tekst A er globale variabler.</p>
+        <br>
+        <p>Tall og tekst B er lokale variabler.</p>
+
+
+        <div>
+            <button onclick="tall1()">1</button>
+            <button onclick="tall2()">2</button>
+            <button onclick="tall3()">3</button>
+            <br>
+            <button onclick="tall4()">4</button>
+            <button onclick="tall5()">5</button>
+            <button onclick="tall6()">6</button>
+            <br>
+            <button onclick="tall7()">7</button>
+            <button onclick="tall8()">8</button>
+            <button onclick="tall9()">9</button>
+        </div>
+
+        <p id="jja"></p>
+
+
+
+
+
+
+
+
+        <script>
+            var tallA =0;
+            var tekstA ='tekstB'
+            Console.log(tallA, tekstA);
+
+            function tell() {
+                var TallB =0;
+                var tekstB='TekstB';
+
+                tallA ++;
+                TallB ++;
+                tekstA += '*';
+                tekstB +='*';
+
+                document.getElementById('info').innerHTML=
+                'tallA='+ tallA +
+                '<br/>TallB=' + TallB +
+                '<br/>TekstA=' + tekstA +
+                '<br/>tekstB=' + tekstB;
+            }
+
+        function tall1() {
+            document.getElementById('jja').innerHTML += '1';
+        }
+
+        function tall2() {
+            document.getElementById('jja').innerHTML += '2';
+        }
+
+        function tall3() {
+            document.getElementById('jja').innerHTML += '3';
+        }
+
+        function tall4() {
+            document.getElementById('jja').innerHTML += '4';
+        }
+
+        function tall5() {
+            document.getElementById('jja').innerHTML += '5';
+        }
+
+        function tall6() {
+            document.getElementById('jja').innerHTML += '6';
+        }
+
+        function tall7() {
+            document.getElementById('jja').innerHTML += '7';
+        }
+
+        function tall8() {
+            document.getElementById('jja').innerHTML += '8';
+        }
+
+        function tall9() {
+            document.getElementById('jja').innerHTML += '9';
+        }
+
+        
+    
+
+       
+
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1 {text-align: center;}
+
+        h2 {text-align: center;}
+
+        h3 {text-align: center;}
+
+        div {text-align: center;}
+
+        p {text-align: center;}
+    </style>
+    <body onload=localtime()>
+
+        <h1>Kode som kjøres når siden lastes vs kode i en funksjon</h1>
+        <br>
+        <p>kode som skal kjøres under onload settes direkte i script</p>
+        <br>
+        <p>kode som skal kjøres under et event settes i en function</p>
+        <br>
+        <p><button onclick="doclick()">Trykk</button></p>
+        <br>
+        <p><button onclick="localtime()">Trykk for lokal tid</button></p>
+        <div id="onloadd"></div>
+        <div id="onclickk"></div>
+
+        <img src="https://www.wwf.no/assets/article_images/Dyr/_1600x1067_crop_center-center_none/Original_WW225836.jpg" alt="Elefant">
+
+
+        <script>
+            alert('dette skjer når siden lastes');
+            var onloadd =document.getElementById('onloadd').innerHTML = '' + new Date().toTimeString();
+
+
+            function doclick() {
+                alert('dette skjer i funksjonen doclick');
+            }
+
+            function localtime() {
+                document.getElementById('onclickk').innerHTML += '</br>' + new Date().toTimeString();
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        h1 {text-align: center;}
+
+        h2 {text-align: center;}
+
+        h3 {text-align: center;}
+
+        p {text-align: center;}
+
+        .centre {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td {font-size: xx-large;}
+
+    </style>
+    <body>
+        <h1>Nøkkelord "this"</h1>
+        <br>
+        <p>Nøkkelordet this brukes til å endre elementet man trykker på. (det elementet som utløser eventet.</p>
+        <br>
+        <p>Funksjonen er dynamisk og trenger dermed ingen id.</p>
+        <br>
+        <h2 onclick="doSomething(this)">trykk her for å endre text</h2>
+        <h2 onclick="doSomething(this)">trykk her for å endre text</h2>
+        <h2 onclick="doSomething(this)">trykk her for å endre text</h2>
+        <h2 onclick="doSomething(this)">trykk her for å endre text</h2>
+        <h2 onclick="doSomething(this)">trykk her for å endre text</h2>
+        <h2 onclick="doSomething(this)">trykk her for å endre text</h2>
+
+        <h1>oppgave</h1>
+        
+        <table class="centre">
+            <tr>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+            </tr>
+            <tr>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+            </tr>
+            <tr>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+                <td onmouseover="tabellja(this)">o</td>
+            </tr>
+        </table>
+        
+
+
+            <script>
+                function doSomething(x) {
+                    x.innerHTML ='Bra jobba!';
+                }
+
+                function tabellja(y) {
+                    y.innerHTML = 'x';
+                }
+            </script>
+    </body>
+</html>
