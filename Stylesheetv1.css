@@ -1,0 +1,329 @@
+    body {
+        margin: 5px;
+        padding: 0;
+    }
+
+    Div.header {
+        padding: 2px;
+        margin: 5px;
+        background-color: rgb(208, 214, 218);
+        grid-area: header;
+        font-family: fantasy;
+        font-size: xx-large;
+    }
+
+    Div.meny {
+        margin: 5px;
+        background-color: rgb(214, 229, 243); 
+        display: block;
+        grid-area: meny;
+        text-align: center;
+        padding-top: 30px;
+    }
+    
+    div.innhold {
+        background-color: rgb(220, 235, 235);
+        margin: 5px;
+        padding: 5px;
+
+    }
+
+    Div.footer {
+        margin: 5px;
+        background-color: rgb(224, 250, 255);
+        grid-area: footer;
+        float: left;
+        text-align: center;
+        padding-top: 30px;
+    }
+
+    Div.page {
+        background-color: rgb(242, 246, 248);
+        margin: 2px;
+        height: 100vh;
+        display: grid;
+        grid-template-columns:  1fr 3fr;
+        grid-template-rows: 1fr 8fr 1fr;
+        grid-template-areas: 'header header'
+                             'meny innhold'
+                             'footer footer'
+
+    }
+
+    div.htmlbasic {
+        font-size: 2vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    Div.utenmeny {
+        grid-template-columns:  0px 4fr;
+    }    
+
+    div.HTMLelements {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.HTMLattributes {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.HTMLheadings {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.HTMLparagraphs {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.HTMLstyles {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.HTMLtextformat {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.tom1 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.tom2 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.tom3 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.CSS {
+        display: none;
+        font-size: 2vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    div.CSS1 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.CSS2 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.CSS3 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.CSS4 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.CSS5 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.javascript {
+        display: none;
+        font-size: 2vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    div.Java1 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Java2 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Java3 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Java4 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.SVG {
+        display: none;
+        font-size: 2vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    div.SVG1 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.SVG2 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+    
+    div.SVG3 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.SVG4 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+
+    div.mattematikk {
+        display: none;
+        font-size: 2vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    div.Matte1 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Matte2 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Matte3 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Matte4 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Matte5 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Github {
+        display: none;
+        font-size: 2vw;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    div.Git1 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Git2 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Git3 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Git4 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Git5 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
+
+    div.Git6 {
+        margin: 5px;
+        padding-top: 30px;
+        border-style: solid;
+        text-align: center;
+    }
